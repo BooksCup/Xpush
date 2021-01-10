@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends Activity{
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,12 +16,12 @@ public class MainActivity extends Activity{
 
     // jpush_click_start
     public void onClickJPush(View v) {
-        try{
+        try {
             Intent intent = new Intent();
-            intent.setClassName(getPackageName(),"cn.jiguang.demo.jpush.MainActivity");
+            intent.setClassName(getPackageName(), "com.bc.xpush.jpush.MainActivity");
             startActivity(intent);
-        }catch (Throwable e){
-            Toast.makeText(this,"can't find jpush demo",Toast.LENGTH_SHORT).show();
+        } catch (Throwable e) {
+            Toast.makeText(this, "can't find jpush demo", Toast.LENGTH_SHORT).show();
         }
     }
     // jpush_click_end
